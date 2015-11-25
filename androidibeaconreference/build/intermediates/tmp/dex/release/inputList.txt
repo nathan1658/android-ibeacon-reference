@@ -1,0 +1,3 @@
+/Users/Nathan/Downloads/ibeacon/android-ibeacon-reference/androidibeaconreference/build/intermediates/classes/release
+/Users/Nathan/Downloads/ibeacon/android-ibeacon-reference/androidibeaconreference/build/intermediates/pre-dexed/release/classes-ece79d47141573c7d9df23ff657f239fdece1bb4.jar
+/Users/Nathan/Downloads/ibeacon/android-ibeacon-reference/androidibeaconreference/build/intermediates/pre-dexed/release/support-v4-18.0.0-fddd455935f21496183c124436f09dc8a7d0d3c2.jar

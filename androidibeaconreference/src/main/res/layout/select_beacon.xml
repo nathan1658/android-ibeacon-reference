@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/BEACON_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="default_uuid"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold|italic">
+        </TextView>
+
+        <TextView
+            android:id="@+id/BEACON_proximity"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="default_proximity"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignTop="@+id/BEACON_txpower"
+            android:layout_toStartOf="@+id/BEACON_uuid"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/BEACON_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:text="default_major"
+            android:layout_marginTop="48dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_below="@+id/BEACON_uuid"
+            android:layout_alignStart="@+id/textView3">
+        </TextView>
+
+        <TextView
+            android:id="@+id/BEACON_minor"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|top"
+            android:text="default_minor"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/BEACON_major"
+            android:layout_alignStart="@+id/textView4">
+        </TextView>
+
+        <TextView
+            android:id="@+id/BEACON_txpower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="76dp"
+            android:gravity="left|top"
+            android:text="default_txpower"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/BEACON_minor"
+            android:layout_alignStart="@+id/textView6"
+            android:textStyle="bold"
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major:"
+            android:id="@+id/textView3"
+            android:layout_above="@+id/BEACON_minor"
+            android:layout_alignEnd="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minor:"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/BEACON_minor"
+            android:layout_toEndOf="@+id/BEACON_major" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proxmity:"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/BEACON_proximity"
+            android:layout_alignStart="@+id/BEACON_major" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Txpower:"
+            android:id="@+id/textView6"
+            android:layout_above="@+id/BEACON_proximity"
+            android:layout_alignStart="@+id/BEACON_minor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Range:"
+            android:id="@+id/textView7"
+            android:layout_alignStart="@+id/BEACON_proximity"
+            android:layout_marginTop="33dp"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:id="@+id/btnChange"
+            android:layout_alignTop="@+id/editText"
+            android:layout_alignEnd="@+id/BEACON_txpower" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:layout_alignStart="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Beacon Name"
+            android:id="@+id/textView8"
+            android:layout_above="@+id/editText"
+            android:layout_alignStart="@+id/textView5" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.radiusnetworks.ibeaconreference"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RangingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MonitoringActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.radiusnetworks.ibeacon.service.IBeaconService"
+            android:enabled="true"
+            android:exported="true"
+            android:isolatedProcess="false"
+            android:label="iBeacon" >
+        </service>
+        <service
+            android:name="com.radiusnetworks.ibeacon.IBeaconIntentProcessor"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+
+            <intent-filter android:priority="1" >
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_RANGING" />
+                <action android:name="com.radiusnetworks.ibeaconreference.DID_MONITORING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".BeaconDetactorService"
+            android:enabled="true" >
+            <meta-data
+                android:name="background"
+                android:value="true" />
+        </service>
+
+        <activity
+            android:name=".selectBeacon2"
+            android:label="@string/title_activity_select_beacon2" >
+        </activity>
+        <activity
+            android:name=".selectBeacon"
+            android:label="select_beacon" >
+        </activity>
+        <activity
+            android:name=".hahahahaha"
+            android:label="@string/title_activity_hahahahaha" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="unspecified"><source path="G:\SSDChrome Download\android-ibeacon-reference\androidibeaconreference\build\intermediates\exploded-aar\android-ibeacon-reference\androidibeaconservice\unspecified\assets"/></dataSet><dataSet config="main"><source path="G:\SSDChrome Download\android-ibeacon-reference\androidibeaconreference\src\main\assets"/></dataSet><dataSet config="debug"><source path="G:\SSDChrome Download\android-ibeacon-reference\androidibeaconreference\src\debug\assets"/></dataSet></merger>
